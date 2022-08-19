@@ -6,7 +6,7 @@ function NavBar() {
 
   // TODO: add transition animation for navbar
   return (
-    <div className="flex justify-between py-10 pr-6 text-Dark-Blue">
+    <nav className="flex justify-between py-10 pr-6 text-Dark-Blue">
       <Link href="/">
         <img src="/images/logo.svg" alt="logo" className="scale-75" />
       </Link>
@@ -40,7 +40,7 @@ function NavBar() {
         <Link href="#careers">Careers</Link>
         <Link href="#community">Community</Link>
       </ul>
-    </div>
+    </nav>
   )
 }
 
