@@ -17,7 +17,7 @@ function intro() {
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view.
         </p>
-        <button className="mt-8 rounded-full bg-Bright-Red px-7 py-3 text-sm font-bold text-Very-Pale-Red">
+        <button className="mt-8 rounded-full bg-Bright-Red w-36 py-3 text-sm font-bold text-Very-Pale-Red">
           Get Started
         </button>
       </div>

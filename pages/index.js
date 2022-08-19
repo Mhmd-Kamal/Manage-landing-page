@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import NavBar from '../components/NavBar'
 import Intro from '../components/Intro'
-import Testmonials from '../components/Testmonials'
+import Testmonials from '../components/TestmonialCarousel/Testmonials'
 
 const Home = () => {
   return (
