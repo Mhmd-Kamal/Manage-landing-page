@@ -42,26 +42,37 @@ function Testmonials() {
   }
 
   return (
-    <div className="flex flex-col pb-6">
-      <h2 className="text-center mb-16 text-3xl font-bold leading-snug ">
-        What they’ve said
-      </h2>
-      <div id="carousel">
-        <Swiper
-          modules={[Pagination]}
-          pagination={pagination}
-          className="mySwiper"
-        >
-          {testmonials.map((testmonial) => (
-            <SwiperSlide>
-              <TestmonialCard testmonial={testmonial} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <div>
+      <div className="flex flex-col pb-10">
+        <h2 className="text-center mb-16 text-3xl font-bold leading-snug ">
+          What they’ve said
+        </h2>
+        <div id="carousel">
+          <Swiper
+            modules={[Pagination]}
+            pagination={pagination}
+            className="mySwiper"
+          >
+            {testmonials.map((testmonial) => (
+              <SwiperSlide>
+                <TestmonialCard testmonial={testmonial} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <button className="mt-8 rounded-full self-center bg-Bright-Red w-36 py-3 text-sm font-bold text-Very-Pale-Red">
+          Get Started
+        </button>
       </div>
-      <button className="mt-8 rounded-full self-center bg-Bright-Red w-36 py-3 text-sm font-bold text-Very-Pale-Red">
-        Get Started
-      </button>
+
+      <div className="bg-Bright-Red py-20 px-10 text-center">
+        <h2 className="text-4xl font-medium leading-snug text-Very-Pale-Red">
+          Simplify how your team works today.
+        </h2>
+        <button className="mt-8 rounded-full self-center text-Bright-Red w-36 py-3 text-sm font-bold bg-Very-Pale-Red">
+          Get Started
+        </button>
+      </div>
     </div>
   )
 }

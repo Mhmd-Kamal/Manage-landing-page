@@ -4,6 +4,7 @@ import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import Intro from '../components/Intro'
 import Testmonials from '../components/TestmonialCarousel/Testmonials'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <NavBar />
       <Intro />
       <Testmonials/>
+      <Footer />
     </div>
   )
 }
