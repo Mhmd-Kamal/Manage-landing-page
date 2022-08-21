@@ -1,8 +1,6 @@
-import React from 'react'
+import Link from 'next/link'
 
 function Footer() {
-  //TODO: add form validation
-  //TODO: add link to list items
   return (
     <div className="bg-Very-Dark-Blue text-Vary-Light-Gray pt-12 px-6 pb-8 text-sm">
       <form method="POST" action="/subscribe" className="flex gap-2">
@@ -11,7 +9,7 @@ function Footer() {
           type="email"
           name="email"
           id="email"
-          placeholder="Update i  your inbox..."
+          placeholder="Update in your inbox..."
         />
         <button
           className="bg-Bright-Red text-Very-Pale-Red text-sm p-3 px-6 rounded-full"
@@ -22,20 +20,34 @@ function Footer() {
       </form>
       <div className="flex justify-between px-8 py-14 text-Very-Pale-Red">
         <ul className="flex flex-col gap-3">
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/home">Home</Link>
+          </li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/pricing">Pricing</Link>
+          </li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/products">Products</Link>
+          </li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/about-us">About Us</Link>
+          </li>
         </ul>
         <ul className="flex flex-col gap-3">
-          <li>Careers</li>
-          <li>Community</li>
-          <li>Privacy Policy</li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/careers">Careers</Link>
+          </li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/community">Community</Link>
+          </li>
+          <li className="cursor-pointer hover:text-Bright-Red">
+            <Link href="/privacy">Privacy Policy</Link>
+          </li>
         </ul>
       </div>
       <div className="flex justify-between px-3 ">
         <img
-          className="w-8"
+          className="w-8 "
           src="/images/icon-facebook.svg"
           alt="facebook link"
         />
@@ -92,5 +104,3 @@ function Footer() {
 }
 
 export default Footer
-
-//Get Started Home Pricing Products About Us Careers Community Privacy Policy Updates in your inbox… Go
