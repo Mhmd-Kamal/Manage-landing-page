@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className="bg-Very-Dark-Blue text-Vary-Light-Gray pt-12 px-6 pb-8 text-sm">
+    <div className="bg-Very-Dark-Blue text-Vary-Light-Gray pt-12 px-6 pb-8 text-sm lg:px-32 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:items-start lg:gap-20">
       <form method="POST" action="/subscribe" className="flex gap-2">
         <input
           className="rounded-full text-sm text-Very-Dark-Blue py-3 px-6 placeholder:text-sm flex-1"
@@ -12,14 +12,14 @@ function Footer() {
           placeholder="Update in your inbox..."
         />
         <button
-          className="bg-Bright-Red text-Very-Pale-Red text-sm p-3 px-6 rounded-full"
+          className="bg-Bright-Red hover:bg-[#F98F75] text-Very-Pale-Red text-sm p-3 px-6 rounded-full"
           type="submit"
         >
           GO
         </button>
       </form>
-      <div className="flex justify-between px-8 py-14 text-Very-Pale-Red">
-        <ul className="flex flex-col gap-3">
+      <div className="flex justify-between px-8 py-14 text-Very-Pale-Red lg:col-start-2 lg:col-span-2 lg:row-start-1 lg:row-span-2 lg:py-0">
+        <ul className="flex flex-col gap-3 lg:gap-5">
           <li className="cursor-pointer hover:text-Bright-Red">
             <Link href="/home">Home</Link>
           </li>
@@ -33,7 +33,7 @@ function Footer() {
             <Link href="/about-us">About Us</Link>
           </li>
         </ul>
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-3 lg:gap-5">
           <li className="cursor-pointer hover:text-Bright-Red">
             <Link href="/careers">Careers</Link>
           </li>
@@ -45,7 +45,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex justify-between px-3 ">
+      <div className="flex justify-between px-3 lg:col-start-1 lg:row-start-2">
         <img
           className="w-8 "
           src="/images/icon-facebook.svg"
@@ -72,7 +72,7 @@ function Footer() {
           alt="instagram link"
         />
       </div>
-      <div className="py-12 flex justify-center">
+      <div className="py-12 flex justify-center lg:order-first lg:p-0 lg:justify-self-stretch">
         <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
           <g
             fill="none"

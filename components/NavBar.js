@@ -6,12 +6,15 @@ function NavBar() {
 
   // TODO: add transition animation for navbar
   return (
-    <nav className="flex justify-between py-10 pr-6 text-Dark-Blue">
+    <nav className="flex justify-between items-center lg:px-32 py-10 pr-6 text-Dark-Blue">
       <Link href="/">
         <img src="/images/logo.svg" alt="logo" className="scale-75" />
       </Link>
 
-      <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className="cursor-pointer lg:hidden"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {isOpen ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
             <path
@@ -31,15 +34,28 @@ function NavBar() {
 
       <ul
         className={`${
-          isOpen ? ' scale-100' : ' scale-0'
-        } absolute inset-x-6 top-28 flex origin-top flex-col items-center gap-6 rounded-sm bg-white p-10 font-bold shadow-md transition-all duration-500`}
+          isOpen ? ' scale-100' : 'scale-0 lg:scale-100'
+        } absolute lg:static  lg:flex-row inset-x-6 top-28 flex origin-top flex-col items-center gap-6 rounded-sm bg-white p-10 lg:p-0 font-bold shadow-md lg:shadow-none transition-all duration-500`}
       >
-        <Link href="#pricing">Pricing</Link>
-        <Link href="#product">Product</Link>
-        <Link href="#about_us">About Us</Link>
-        <Link href="#careers">Careers</Link>
-        <Link href="#community">Community</Link>
+        <Link href="#pricing">
+          <a className="hover:text-slate-400">Pricing</a>
+        </Link>
+        <Link href="#product">
+          <a className="hover:text-slate-400">Product</a>
+        </Link>
+        <Link href="#about_us">
+          <a className="hover:text-slate-400">About Us</a>
+        </Link>
+        <Link href="#careers">
+          <a className="hover:text-slate-400">Careers</a>
+        </Link>
+        <Link href="#community">
+          <a className="hover:text-slate-400">Community</a>
+        </Link>
       </ul>
+      <button className="hidden lg:block mt-8 lg:m-0 rounded-full bg-Bright-Red hover:bg-[#F98F75] w-36 py-3 text-sm font-bold text-Very-Pale-Red">
+        Get Started
+      </button>
     </nav>
   )
 }

@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper'
+import { Pagination, Autoplay } from 'swiper'
 
 import { TestmonialCard } from './TestmonialCard'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
 
 const testmonials = [
   {
@@ -43,15 +44,22 @@ function Testmonials() {
 
   return (
     <div>
-      <div className="flex flex-col pb-10">
+      <div className="flex flex-col pb-10 lg:pt-32">
         <h2 className="text-center mb-16 text-3xl font-bold leading-snug ">
           What they’ve said
         </h2>
         <div id="carousel">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             pagination={pagination}
             className="mySwiper"
+            autoplay={{ delay: 5000 }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 3,
+                pagination: false,
+              },
+            }}
           >
             {testmonials.map((testmonial) => (
               <SwiperSlide>
@@ -60,16 +68,16 @@ function Testmonials() {
             ))}
           </Swiper>
         </div>
-        <button className="mt-8 rounded-full self-center bg-Bright-Red w-36 py-3 text-sm font-bold text-Very-Pale-Red">
+        <button className="mt-8 rounded-full self-center bg-Bright-Red hover:bg-[#F98F75] w-36 py-3 text-sm font-bold text-Very-Pale-Red">
           Get Started
         </button>
       </div>
 
-      <div className="bg-Bright-Red py-20 px-10 text-center">
-        <h2 className="text-4xl font-medium leading-snug text-Very-Pale-Red">
+      <div className="bg-Bright-Red py-20 px-10 text-center lg:flex lg:px-32  lg:justify-between">
+        <h2 className="text-4xl lg:w-1/3 lg:text-left font-medium leading-snug text-Very-Pale-Red">
           Simplify how your team works today.
         </h2>
-        <button className="mt-8 rounded-full self-center text-Bright-Red w-36 py-3 text-sm font-bold bg-Very-Pale-Red">
+        <button className="mt-8 lg:m-0 rounded-full self-center text-Bright-Red hover:text-[#F98F75] w-36 py-3 text-sm font-bold bg-Very-Pale-Red">
           Get Started
         </button>
       </div>
