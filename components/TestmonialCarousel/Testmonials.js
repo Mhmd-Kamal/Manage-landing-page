@@ -73,7 +73,7 @@ function Testmonials() {
         </button>
       </div>
 
-      <div className="bg-Bright-Red py-20 px-10 text-center lg:flex lg:px-32  lg:justify-between">
+      <div className="bg-Bright-Red bg-simplify-section-mobile lg:bg-simplify-section-desktop bg-no-repeat py-20 px-10 text-center lg:flex lg:px-32  lg:justify-between">
         <h2 className="text-4xl lg:w-1/3 lg:text-left font-medium leading-snug text-Very-Pale-Red">
           Simplify how your team works today.
         </h2>

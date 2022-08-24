@@ -11,7 +11,7 @@ const Home = () => {
     <div className="flex min-h-screen flex-col text-Dark-Blue">
       <NavBar />
       <Intro />
-      <Testmonials/>
+      <Testmonials />
       <Footer />
     </div>
   )

@@ -35,7 +35,7 @@ function NavBar() {
       <ul
         className={`${
           isOpen ? ' scale-100' : 'scale-0 lg:scale-100'
-        } absolute lg:static  lg:flex-row inset-x-6 top-28 flex origin-top flex-col items-center gap-6 rounded-sm bg-white p-10 lg:p-0 font-bold shadow-md lg:shadow-none transition-all duration-500`}
+        } absolute lg:static lg:bg-transparent lg:flex-row inset-x-6 top-28 flex origin-top flex-col items-center gap-6 rounded-sm bg-white p-10 lg:p-0 font-bold shadow-md lg:shadow-none transition-all duration-500`}
       >
         <Link href="#pricing">
           <a className="hover:text-slate-400">Pricing</a>

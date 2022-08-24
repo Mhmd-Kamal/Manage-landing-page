@@ -2,7 +2,7 @@ import React from 'react'
 
 function intro() {
   return (
-    <section className="lg:px-32 lg:pt-10">
+    <section className="lg:px-32 lg:pt-10 flex flex-col lg:gap-20 gap-32">
       <div className="lg:flex lg:gap-20">
         <div>
           <img

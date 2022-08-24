@@ -14,6 +14,13 @@ module.exports = {
         'Very-Pale-Red': 'hsl(13, 100%, 96%)',
         'Vary-Light-Gray': 'hsl(0, 0%, 98%)',
       },
+      backgroundImage: {
+        'simplify-section-desktop':
+          "url('/images/bg-simplify-section-desktop.svg')",
+        'simplify-section-mobile':
+          "url('/images/bg-simplify-section-mobile.svg')",
+        'tablet-pattern': "url('/images/bg-tablet-pattern.svg')",
+      },
     },
   },
   plugins: [],
