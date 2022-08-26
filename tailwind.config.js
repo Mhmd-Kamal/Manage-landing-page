@@ -19,7 +19,8 @@ module.exports = {
           "url('/images/bg-simplify-section-desktop.svg')",
         'simplify-section-mobile':
           "url('/images/bg-simplify-section-mobile.svg')",
-        'tablet-pattern': "url('/images/bg-tablet-pattern.svg')",
+        'tablet-pattern':
+          "url('/images/bg-tablet-pattern.svg'),url('/images/bg-tablet-pattern.svg')",
       },
       backgroundPosition: {
         'mobile-position': 'right -250px top 500px, right -70px top -70px',

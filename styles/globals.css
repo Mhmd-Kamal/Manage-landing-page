@@ -15,7 +15,7 @@ html{
 
 @layer components{
   .background{
-    @apply  bg-[url('../public/images/bg-tablet-pattern.svg'),url('../public/images/bg-tablet-pattern.svg')] bg-no-repeat bg-mobile-position bg-mobile-size md:bg-tablet-size md:bg-tablet-position xl:bg-desktop-size xl:bg-desktop-position
+    @apply  bg-tablet-pattern bg-no-repeat bg-mobile-position bg-mobile-size md:bg-tablet-size md:bg-tablet-position xl:bg-desktop-size xl:bg-desktop-position
   }
 }
 #carousel .swiper-pagination{
