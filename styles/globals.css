@@ -11,6 +11,13 @@ html{
     font-family: 'Be Vietnam Pro', sans-serif;
     }
 }
+
+
+@layer components{
+  .background{
+    @apply  bg-[url('../public/images/bg-tablet-pattern.svg'),url('../public/images/bg-tablet-pattern.svg')] bg-no-repeat bg-mobile-position bg-mobile-size md:bg-tablet-size md:bg-tablet-position xl:bg-desktop-size xl:bg-desktop-position
+  }
+}
 #carousel .swiper-pagination{
     position: static;
     margin-top: 10px;
@@ -31,7 +38,7 @@ html{
     background: hsl(12, 88%, 59%);
   }
 
-  html{
+  /* html{
     background-image: url('../public/images/bg-tablet-pattern.svg'),url('../public/images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: 110%;
@@ -55,4 +62,4 @@ html{
     background-size:auto;
     background-position: -70% 55%, right -10% top -10%;
   }
-}
+} */

@@ -21,6 +21,16 @@ module.exports = {
           "url('/images/bg-simplify-section-mobile.svg')",
         'tablet-pattern': "url('/images/bg-tablet-pattern.svg')",
       },
+      backgroundPosition: {
+        'mobile-position': 'right -250px top 500px, right -70px top -70px',
+        'tablet-position': '-90% 45%, right -35% top',
+        'desktop-position': '-70% 55%, right -10% top -10%',
+      },
+      backgroundSize: {
+        'mobile-size': '110%',
+        'tablet-size': '60%',
+        'desktop-size': 'auto',
+      },
     },
   },
   plugins: [],

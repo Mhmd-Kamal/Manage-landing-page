@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col text-Dark-Blue">
+    <div className="flex min-h-screen flex-col text-Dark-Blue background">
       <Head>
         <title>Manage</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />

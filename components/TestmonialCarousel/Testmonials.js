@@ -48,7 +48,7 @@ function Testmonials() {
         <h2 className="text-center mb-16 text-3xl font-bold leading-snug ">
           What they’ve said
         </h2>
-        <div id="carousel">
+        <div id="carousel" className="cursor-pointer">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={pagination}
